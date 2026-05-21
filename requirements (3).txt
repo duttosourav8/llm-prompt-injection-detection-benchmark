@@ -1,0 +1,11 @@
+datasets
+scikit-learn
+pandas
+numpy
+matplotlib
+nltk
+joblib
+gensim
+spacy
+scipy
+xgboost
