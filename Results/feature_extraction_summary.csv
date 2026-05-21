@@ -1,0 +1,9 @@
+feature_method,train_shape,test_shape,feature_type
+Bag_of_Words,"(546, 5000)","(116, 5000)",sparse_nonnegative
+TFIDF_Word,"(546, 5000)","(116, 5000)",sparse_nonnegative
+TFIDF_Char,"(546, 5000)","(116, 5000)",sparse_nonnegative
+TFIDF_Word_Char_Combined,"(546, 10000)","(116, 10000)",sparse_nonnegative
+Word2Vec_Average,"(546, 100)","(116, 100)",dense_real
+FastText_Average,"(546, 100)","(116, 100)",dense_real
+GloVe_Average,"(546, 50)","(116, 50)",dense_real
+Linguistic_Security_Features,"(546, 38)","(116, 38)",dense_nonnegative

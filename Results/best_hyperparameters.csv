@@ -1,0 +1,73 @@
+feature_method,model,best_cv_f1,best_params
+Bag_of_Words,Multinomial_NB,0.7468,{'alpha': 0.01}
+Bag_of_Words,Complement_NB,0.7462,"{'norm': False, 'alpha': 0.01}"
+Bag_of_Words,Bernoulli_NB,0.7908,"{'binarize': 0.0, 'alpha': 0.01}"
+Bag_of_Words,Logistic_Regression,0.8289,"{'solver': 'liblinear', 'C': 10.0}"
+Bag_of_Words,Linear_SVM,0.8349,{'C': 1.0}
+Bag_of_Words,Decision_Tree,0.6954,"{'min_samples_split': 10, 'min_samples_leaf': 2, 'max_depth': 20}"
+Bag_of_Words,Random_Forest,0.7757,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None}"
+Bag_of_Words,Extra_Trees,0.8268,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None}"
+Bag_of_Words,XGBoost,0.7193,"{'subsample': 1.0, 'n_estimators': 200, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 0.8}"
+TFIDF_Word,Multinomial_NB,0.7752,{'alpha': 0.05}
+TFIDF_Word,Complement_NB,0.7648,"{'norm': False, 'alpha': 0.01}"
+TFIDF_Word,Bernoulli_NB,0.7908,"{'binarize': 0.0, 'alpha': 0.01}"
+TFIDF_Word,Logistic_Regression,0.8138,"{'solver': 'liblinear', 'C': 10.0}"
+TFIDF_Word,Linear_SVM,0.8204,{'C': 2.0}
+TFIDF_Word,Decision_Tree,0.7143,"{'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': None}"
+TFIDF_Word,Random_Forest,0.7666,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None}"
+TFIDF_Word,Extra_Trees,0.7924,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None}"
+TFIDF_Word,XGBoost,0.7805,"{'subsample': 0.8, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 1.0}"
+TFIDF_Char,Multinomial_NB,0.8222,{'alpha': 0.01}
+TFIDF_Char,Complement_NB,0.8178,"{'norm': False, 'alpha': 0.01}"
+TFIDF_Char,Bernoulli_NB,0.8426,"{'binarize': 0.0, 'alpha': 0.01}"
+TFIDF_Char,Logistic_Regression,0.8735,"{'solver': 'liblinear', 'C': 10.0}"
+TFIDF_Char,Linear_SVM,0.8807,{'C': 1.0}
+TFIDF_Char,Decision_Tree,0.7634,"{'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': None}"
+TFIDF_Char,Random_Forest,0.8625,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20}"
+TFIDF_Char,Extra_Trees,0.8776,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None}"
+TFIDF_Char,XGBoost,0.8114,"{'subsample': 1.0, 'n_estimators': 200, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 0.8}"
+TFIDF_Word_Char_Combined,Multinomial_NB,0.8152,{'alpha': 0.05}
+TFIDF_Word_Char_Combined,Complement_NB,0.8135,"{'norm': False, 'alpha': 0.1}"
+TFIDF_Word_Char_Combined,Bernoulli_NB,0.8461,"{'binarize': 0.1, 'alpha': 0.05}"
+TFIDF_Word_Char_Combined,Logistic_Regression,0.8619,"{'solver': 'liblinear', 'C': 10.0}"
+TFIDF_Word_Char_Combined,Linear_SVM,0.8715,{'C': 5.0}
+TFIDF_Word_Char_Combined,Decision_Tree,0.7582,"{'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': None}"
+TFIDF_Word_Char_Combined,Random_Forest,0.8396,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20}"
+TFIDF_Word_Char_Combined,Extra_Trees,0.8703,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': None}"
+TFIDF_Word_Char_Combined,XGBoost,0.8005,"{'subsample': 1.0, 'n_estimators': 200, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 0.8}"
+Word2Vec_Average,Gaussian_NB,0.5546,{'var_smoothing': np.float64(1e-12)}
+Word2Vec_Average,Logistic_Regression,0.7361,"{'classifier__solver': 'liblinear', 'classifier__C': 10.0}"
+Word2Vec_Average,Linear_SVM,0.7366,{'classifier__C': 0.5}
+Word2Vec_Average,Decision_Tree,0.6264,"{'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': 3}"
+Word2Vec_Average,Random_Forest,0.6996,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20}"
+Word2Vec_Average,Extra_Trees,0.7174,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': 10}"
+Word2Vec_Average,Gradient_Boosting,0.6782,"{'subsample': 0.8, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.1}"
+Word2Vec_Average,KNN,0.6853,"{'classifier__weights': 'uniform', 'classifier__n_neighbors': 3, 'classifier__metric': 'euclidean'}"
+Word2Vec_Average,XGBoost,0.6743,"{'subsample': 0.8, 'n_estimators': 150, 'max_depth': 3, 'learning_rate': 0.1, 'colsample_bytree': 0.8}"
+FastText_Average,Gaussian_NB,0.5632,{'var_smoothing': np.float64(1e-12)}
+FastText_Average,Logistic_Regression,0.7538,"{'classifier__solver': 'liblinear', 'classifier__C': 10.0}"
+FastText_Average,Linear_SVM,0.7748,{'classifier__C': 5.0}
+FastText_Average,Decision_Tree,0.6111,"{'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': 3}"
+FastText_Average,Random_Forest,0.5902,"{'n_estimators': 100, 'min_samples_split': 5, 'min_samples_leaf': 1, 'max_depth': 5}"
+FastText_Average,Extra_Trees,0.57,"{'n_estimators': 200, 'min_samples_split': 10, 'min_samples_leaf': 1, 'max_depth': 10}"
+FastText_Average,Gradient_Boosting,0.6142,"{'subsample': 0.8, 'n_estimators': 200, 'max_depth': 4, 'learning_rate': 0.1}"
+FastText_Average,KNN,0.547,"{'classifier__weights': 'distance', 'classifier__n_neighbors': 7, 'classifier__metric': 'euclidean'}"
+FastText_Average,XGBoost,0.5944,"{'subsample': 1.0, 'n_estimators': 150, 'max_depth': 5, 'learning_rate': 0.05, 'colsample_bytree': 1.0}"
+GloVe_Average,Gaussian_NB,0.6154,{'var_smoothing': np.float64(1e-12)}
+GloVe_Average,Logistic_Regression,0.6903,"{'classifier__solver': 'liblinear', 'classifier__C': 0.1}"
+GloVe_Average,Linear_SVM,0.6888,{'classifier__C': 0.01}
+GloVe_Average,Decision_Tree,0.6215,"{'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': None}"
+GloVe_Average,Random_Forest,0.7513,"{'n_estimators': 150, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': 10}"
+GloVe_Average,Extra_Trees,0.7752,"{'n_estimators': 150, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_depth': None}"
+GloVe_Average,Gradient_Boosting,0.7773,"{'subsample': 0.8, 'n_estimators': 200, 'max_depth': 4, 'learning_rate': 0.1}"
+GloVe_Average,KNN,0.7123,"{'classifier__weights': 'distance', 'classifier__n_neighbors': 3, 'classifier__metric': 'manhattan'}"
+GloVe_Average,XGBoost,0.7768,"{'subsample': 0.8, 'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.1, 'colsample_bytree': 1.0}"
+Linguistic_Security_Features,Multinomial_NB,0.5762,{'alpha': 0.01}
+Linguistic_Security_Features,Complement_NB,0.7117,"{'norm': False, 'alpha': 0.01}"
+Linguistic_Security_Features,Bernoulli_NB,0.7343,"{'binarize': 0.0, 'alpha': 0.01}"
+Linguistic_Security_Features,Logistic_Regression,0.7506,"{'solver': 'liblinear', 'C': 10.0}"
+Linguistic_Security_Features,Linear_SVM,0.8043,{'C': 10.0}
+Linguistic_Security_Features,Decision_Tree,0.7792,"{'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 5}"
+Linguistic_Security_Features,Random_Forest,0.8449,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20}"
+Linguistic_Security_Features,Extra_Trees,0.8923,"{'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20}"
+Linguistic_Security_Features,XGBoost,0.8251,"{'subsample': 0.8, 'n_estimators': 150, 'max_depth': 3, 'learning_rate': 0.1, 'colsample_bytree': 0.8}"

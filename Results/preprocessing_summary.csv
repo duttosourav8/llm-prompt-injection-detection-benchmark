@@ -1,0 +1,7 @@
+preprocessing_method,avg_char_count,avg_word_count
+raw_prompt,117.62,19.44
+lower_prompt,117.62,19.44
+clean_prompt,114.4,19.39
+stopword_removed_prompt,91.92,13.41
+lemmatized_prompt,113.19,19.39
+security_preserved_prompt,117.48,19.44
